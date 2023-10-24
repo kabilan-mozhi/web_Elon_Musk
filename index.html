@@ -2,43 +2,348 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Three Column Layout</title>
+    <style>
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-column {
+    width: 5.6%;
+    background-color: grey;
+}
+
+        .icon{
+        
+            padding-top: 40%;
+            margin-top: 1%;
+
+            
+
+
+
+        }
+        .icon img{
+            height: 70%;
+        }
+
+.middle-column {
+    flex: 1;
+    background-color: #f0f1f5;
+    overflow-y: auto;
+    padding: 20px;
+}
+.middle-column::-webkit-scrollbar{
+
+    width: 5px;
+    
+    
+}
+.middle-column::-webkit-scrollbar-track{
+    background:  #d3d3d7;
+
+    
+    
+}
+.middle-column::-webkit-scrollbar-thumb{
+    
+    background:aquamarine ;
+    border-radius: 100px;
+
+
+    
+    
+    
+    
+    
+}
+
+.sepreatrecard1{
+    height: 90%;
+    
+    margin: 10px;
+}
+.sepreatrecard1 p{
+    margin-left: 10px;
+    font-size: 15px;
+    color:black;
+    display: grid;
+    display: flex;
+
+
+    font-family: 'Noto Sans', sans-serif;
+}
+.sepreatrecard2{
+    height: 90%;
+    margin: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sepreatrecard2 p{
+    font-size: 35px;
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    
+    
+}
+
+
+.scrollable-content {
+    max-width: 99.3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    align-items: center;
+    width: 99.3%;
+    margin: 10px auto; /* Spacing between cards */
+    border-radius: 15px;
+    background-color: #FCFCFE;
+    box-shadow: 0 0 10px gray;
+    
+    justify-content: center;
+}
+
+/* Existing styles for the left and middle columns are the same as before */
+
+.right-column {
+    width: 20%;
+    background-color: #f0f1f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.emptyprofile {
+    
+    display: flex;
+    background-color: #f0f1f5;
+    height: 50%;
+    width: 100%;
+    
+
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 10%;
+    
+    
+}
+
+.profile-info {
+
+    height: 10%;
+    width: 90%;
+    justify-content: center;
+    
+    
+    text-align: center;
+    
+    
+
+    
+}
+.profile-info p{
+    font-size: 20px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container-1,
+.container-2,
+.container-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px;
+    height: 5%;
+    width: 90%;
+    background-color: white;
+    margin: 20px;
+    margin-bottom: 10px; /* Spacing between containers */
+    padding: 10px;
+}
+.container-1 p,
+.container-2 p,
+.container-3 p{
+  
+    display: flex;
+    color:black;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 10px;
+    justify-content: flex-start;
+    position: absolute;
+}
+
+
+
+
+
+
+    </style>
 </head>
 <body>
-    <h1 class="musk">Elon Musk </h1>
-    <h2 class=elon>Number one richest people in this planet</h2>
-    <div> <p class="pone">Elon Reeve Musk FRS is an entrepreneur and business magnate. He is the founder, CEO, and Chief Engineer at SpaceX; early-stage investor, CEO, and Product Architect of Tesla, Inc.; founder of The Boring Company; and co-founder of Neuralink and OpenAI.</p>
-    <div align = "middle" class="bruh"> <img src="image/elon musk.jpg"  alt="Elon Musk" class="weed">
-        
+    <div class="container">
+    <!--   <div class="left-column" style="background-color:rgb(104, 242, 252)">
 
-    </div>
-    </div>
- <div class="grey">
-     <div><p> <b> Net worth: </b>26,810 crores USD (2022) Forbes, Trending</p>
-    <div><p><b>Born:</b> 28 June 1971 (age 50 years), Pretoria, South Africa</p></div>
-    <div><p><b>Education:</b> University of Pennsylvania (1992–1997),</p></div>
-    <div><h3>Elon Musk</h3></div>
-    <dir><p>Elon Reeve Musk FRS (/ˈiːlɒn/; born June 28, 1971) is an entrepreneur and business magnate. He is the founder, CEO, and Chief Engineer at SpaceX; early-stage investor, CEO, and Product Architect of Tesla, Inc.; founder of The Boring Company; and co-founder of Neuralink and OpenAI. With an estimated net worth of around US$270 billion as of January 2022,[2] Musk is the wealthiest person in the world according to the Bloomberg billionaires index[3] and the Forbes real-time billionaires list.[4]
 
-        Musk was born to a Canadian mother and South African father, and raised in Pretoria, South Africa. He briefly attended the University of Pretoria before moving to Canada at age 17 to avoid conscription. He was enrolled at Queen's University and transferred to the University of Pennsylvania two years later, where he received a bachelor's degree in economics and physics, then moved to California in 1995 to attend Stanford University but decided instead to pursue a business career, co-founding the web software company Zip2 with his brother Kimbal. The startup was acquired by Compaq for $307 million in 1999. The same year, Musk co-founded online bank X.com, which merged with Confinity in 2000 to form PayPal. The company was bought by eBay in 2002 for $1.5 billion.
+
         
-        In 2002, Musk founded SpaceX, an aerospace manufacturer and space transport services company, of which he is CEO and CTO. In 2004, he joined electric vehicle manufacturer Tesla Motors, Inc. (now Tesla, Inc.) as chairman and product architect, becoming its CEO in 2008. In 2006, he helped create SolarCity, a solar energy services company that was later acquired by Tesla and became Tesla Energy. In 2015, he co-founded OpenAI, a nonprofit research company that promotes friendly artificial intelligence. In 2016, he co-founded Neuralink, a neurotechnology company focused on developing brain–computer interfaces, and founded The Boring Company, a tunnel construction company. Musk has proposed the Hyperloop, a high-speed vactrain transportation system.
+            <div style="height: 100vh;width: 100%; display: flex;flex-direction: column;align-items: center; ">
+
+
+           <div class="logo " style=" 
+           background-color:white;
+            width: 60px; 
+            height: 50px; 
+            border-radius: 30px; 
+            margin-top:30px; display: flex;
+            ">
+             <img src="image/logo.gif" alt="" style=" width: 100%; height: 100%; border-radius: 100%; display: flex; background-color:#236eaf;"></div>
+
+    
+            <div class="icon" style="margin-top: 100px;">
+                <img src="image/space_dashboard.png" alt="dashboard">
+            </div>
+            <div class="icon">
+                <img src="image/🦆 icon _results demographics_.png" alt="accountcircle">
+            </div>
+            <div class="icon">
+                <img src="image/help.png" alt="help">
+            </div>
+            <div class="icon">
+                <img src="image/account_circle.png" alt="accountcircle">
+            </div>
+            <div class="icon">
+                <img src="image/settings.png" alt="setting">
+            </div>
+            <br /><br />
+            <br /><br />
+            <div class="logout" style="margin-top: 50px;">
+                <img src="image/logout.png" alt="logout">
+            </div> 
+
+            </div> 
+        </div> --> 
+        <div class="right-column" style="background-color: #7bc6e8;">
+            <div class="profile" style="width: 100%; background-color: #7bc6e8; ">
+                <div class="emptyprofile" style="background-color: #7bc6e8;"> <img style="height: 100px; border-radius: 100%;display: flex; position: sticky;background-color: #7bc6e8;" src='image/stu.png'></div>
+                <div class="profile-info" >
+                    <div><p>12 'B' </p></div>
+                    <div><p>name</p></div>
+                    
+                    
+                    
+                </div>
+            </div>
+            <div class="container-1" style="margin-top:80%;">
+                <p href="" style=" font-family: 'Noto Sans', sans-serif; font-size: 20px; display: inline;">accadimic</p>
+            </div>
+            <div class="container-2">
+                <p href="" style=" font-family: 'Noto Sans', sans-serif; font-size: 20px;">activity</p>
+            </div>
+            <div class="container-3">
+                <p href="" style=" font-size: 20px;">perfomance</p>
+            </div>
+        </div>
+        <div class="middle-column" style="background-color: white;">
+            <div class="#" style="
+            height: 250px;  
+            background-color:#c4c4ca;position:sticky;
+             top:0; 
+              width: 99.3%;
+              box-shadow: 0 0 13px gray;
+    
+            border-radius: 15px;"></div>
+            <div class="scrollable-content" style="margin:0%;">
+                <!-- Card 1 (250px) -->
+               
+                <!-- Card 2 (200px) -->
+                <div class="card" style="height: 200px;display: grid; grid-template-columns: 1fr 1fr;   ">
+
+                        <div class="sepreatrecard1">
+                            <div class="aboutstudent"><p style="font-size: 20px;">student name</p></div>
+                        <div class="aboutstudent"><p>male</p></div>
+                        <div class="aboutstudent"><p>12th </p></div>
+                        <div class="aboutstudent"><p>section</p></div>
+                        <div class="aboutstudent"><p>2022-2023</p></div>
+                        </div>
+                        <div class="sepreatrecard2">
+
+                            <p>Basic Info</p>
+                        </div>
+
+                    
+                
+                
+                </div>
+                <!-- Card 3 (180px) -->
+                <div class="card" style="height: 180px;display: grid; grid-template-columns: 1fr 1fr; ">
+                    
+                    <div class="sepreatrecard1">
+                        <div class="aboutstudent"><p> fathername</p></div>
+                        <div class="aboutstudent"><p>A/c Officer, BSNL</p></div>
+                        <div class="aboutstudent"><p>mother name</p></div>
+                        <div class="aboutstudent"><p>Gaurdian Name</p></div>
+                        <div class="aboutstudent"><p>+91 98877897 98427</p></div></div>
+                        <div class="sepreatrecard2">
+
+                            <p>Parental Info</p>
+                        </div>
+
+                    
+                
+                
+                
+                </div>
+                <!-- Card 4 (150px) -->
+                <div class="card" style="height: 150px;display: grid; grid-template-columns: 1fr 1fr; ">
+                    
+                    <div class="sepreatrecard1">
+                        <div class="aboutstudent"><p>A+ve</p></div>
+                       
+                        <div class="aboutstudent"><p>30/01/2003</p></div></div>
+                        <div class="sepreatrecard2">
+                            <p>Parental Info</p>
+                        </div>
+
+                    
+                
+                </div>
+                <!-- Card 5 (130px) -->
+                <div class="card" style="height: 130px;display: grid; grid-template-columns: 1fr 1fr; ">
+                
+                    <div class="sepreatrecard1">
+                        <div class="aboutstudent"><p>+91 94827 94827</p></div>
+                       
+                        <div class="aboutstudent"><p>profilefordummy@gmail.com</p></div></div>
+                        <div class="sepreatrecard2">
+                            <p>Contact Info</p>
+                        </div>
+
+                    
+                
+                
+                
+                </div>
+            </div>
+        </div>
+
         
-        Musk has been criticized for unorthodox and unscientific stances and highly publicized controversial statements. In 2018, he was sued by the US Securities and Exchange Commission (SEC) for falsely tweeting that he had secured funding for a private takeover of Tesla. He settled with the SEC, temporarily stepping down from his chairmanship and agreed to limitations on his Twitter usage. In 2019, he won a defamation trial brought against him by a British caver who advised in the Tham Luang cave rescue. Musk has spread misinformation about the COVID-19 pandemic and has received criticism from experts for his other views on such matters as artificial intelligence, cryptocurrency, and public transport.</p></dir>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </div></div
-     ></body>
+</body>
 </html>
